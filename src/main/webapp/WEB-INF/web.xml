@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="5.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+    <filter>
+        <filter-name>RequestLoggingFilter</filter-name>
+        <filter-class>com.gami.gamicodigo.controladores.RequestLoggingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>RequestLoggingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>ControladorLogin</servlet-name>
+        <servlet-class>com.gami.gamicodigo.controladores.ControladorLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorLogout</servlet-name>
+        <servlet-class>com.gami.gamicodigo.controladores.ControladorLogout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControladorLogin</servlet-name>
+        <url-pattern>/ControladorLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorLogout</servlet-name>
+        <url-pattern>/ControladorLogout</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
