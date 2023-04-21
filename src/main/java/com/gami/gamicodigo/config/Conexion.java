@@ -16,7 +16,7 @@ public class Conexion {
 
     protected static Connection con;
     private static final String driver = "com.mysql.cj.jdbc.Driver";
-    private static final String url = "jdbc:mysql://localhost:3306/gami?user=root&password=admin&useSSL=false";
+    private static final String url = "jdbc:mysql://localhost:3306/gami?user=root&password=admin&useSSL=false&allowPublicKeyRetrieval=true";
 
     public static Connection getconexion() {
 

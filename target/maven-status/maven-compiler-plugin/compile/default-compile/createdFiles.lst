@@ -1,8 +1,11 @@
-com\gami\gamicodigo\daoImpl\UsuarioDaoImpl.class
-com\gami\gamicodigo\config\Conexion.class
-com\gami\gamicodigo\dao\CRUD.class
 com\gami\gamicodigo\model\Usuario.class
 com\gami\gamicodigo\dao\UsuarioDao.class
 com\gami\gamicodigo\controladores\ControladorLogin.class
+com\gami\gamicodigo\daoImpl\UsuarioDaoImpl.class
+com\gami\gamicodigo\controladores\AuthenticationFilter.class
 com\gami\gamicodigo\JakartaRestConfiguration.class
+com\gami\gamicodigo\config\Conexion.class
+com\gami\gamicodigo\dao\CRUD.class
+com\gami\gamicodigo\controladores\ControladorLogout.class
 com\gami\gamicodigo\model\Perfil.class
+com\gami\gamicodigo\controladores\RequestLoggingFilter.class

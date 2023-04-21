@@ -45,8 +45,6 @@ public class ControladorLogout extends HttpServlet {
         } catch (SQLException ex) {
             Logger.getLogger(ControladorLogout.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-        System.out.println("User=" + session.getAttribute("usuario")+session.getId());
         
         if (session != null) {
             session.invalidate();
